@@ -22,6 +22,7 @@
 		Raspberry Pi 4 Model B
 		TXS0108E Full Duplex Logic-Level Converter
 	For this device to work, the Raspberry Pi must be able to send hexadecimal bytes to the Arduino. This is done by connecting the UART from each together with a Logic-Level Voltage Converter as the Raspberry Pi outputs 3.3V Logic and the Arduino outputs 5V Logic. You could configure the Ardunio to read from Serial0 and the Raspberry Pi to send Logic through the USB Port; however, I like being able to download sketches to the Arduino, without having to unplug devices. For this reason, I used the Raspberry Pi's UART GPIO pins and Arduino Mega's Serial1 pins (Pin 18 & 19) this way there is no accidental miscommunication by having two devices trying to talk to the Arduino when uploading sketches. 
+	***Wiring Diagram is moot if using PCB instead. 
 	The wiring diagram is available online here: https://lirp.cdn-website.com/65e30418/dms3rep/multi/opt/Wiring+Diagram+-+TXS0108E+Logic+Level+Shifter_bb-960w.jpg
 	Raspberry Pi GPIO Pinout Diagram is available online here: https://pinout.xyz/pinout/uart
 	
